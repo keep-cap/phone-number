@@ -4,7 +4,7 @@ export default {
     themes: [
       {
         fantasy: {
-          ...import("daisyui/src/theming/themes")["fantasy"],
+          ...require("daisyui/src/theming/themes")["fantasy"],
           secondary: "#7F669D",
           accent: "#FFA62F",
         },
@@ -22,5 +22,5 @@ export default {
     },
     extend: {},
   },
-  plugins: [import("daisyui")],
+  plugins: [require("daisyui")],
 };
