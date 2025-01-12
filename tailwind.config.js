@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+import * as themes from "daisyui/src/theming/themes"
 export default {
   daisyui: {
     themes: [
       {
         fantasy: {
-          ...require("daisyui/src/theming/themes")["fantasy"],
+          ...themes["fantasy"],
           secondary: "#7F669D",
           accent: "#FFA62F",
         },
