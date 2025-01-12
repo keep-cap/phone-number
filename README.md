@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/c3084aa4-b7df-42bc-b216-39184582a914">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/f9b146d5-feec-41b5-b495-6d17a601fee1">
+  <img alt="Header" height="80" >
+</picture>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://github.com/user-attachments/assets/d37a62f7-650a-4886-81c9-d3809d3ddeed" width="100%" height="2px"/>
+<p/>
 
-## Available Scripts
+A React-based phone number generator that allows you to create random phone numbers based on selected country codes. You can customize the generated numbers with or without the plus symbol, country prefix, and comma-separated format.
 
-In the project directory, you can run:
+Live Demo: https://generator-phone-number.vercel.app/
 
-### `npm start`
+<img src="https://github.com/user-attachments/assets/542bcdbd-290f-45f6-8ba5-409b009f3e36" width="550"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</br></br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀【 Features 】
 
-### `npm test`
+- **Bulk Generation**: Generate a large number of random phone numbers at once (up to 9999 numbers).
+- **Accurate Country and Operator Codes**: Utilize accurate country codes and operator/region codes for each supported country.
+- **Customizable Text Style**:
+  - **Plus Symbol**: Choose whether to include the plus symbol (+) at the beginning of the phone number.
+  - **Country Prefix**: Optionally include the country prefix code.
+  - **Separation Style**: Separate the generated numbers by new lines or commas.
+- **Unlimited Generation**: Generate as many phone numbers as you need without any limits.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</br>
 
-### `npm run build`
+## 🌍【 Available Countries 】
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Country     | Code | Prefix | Region/Operator Codes   |
+| ----------- | ---- | ------ | ----------------------- |
+| Indonesia   | ID   | +62    | 811, 821, 858, 832, ... |
+| USA         | US   | +1     | 201, 202, 203, 205, ... |
+| UK          | GB   | +44    | 7, ...                  |
+| China       | CN   | +86    | 130, 131, 132, 133, ... |
+| India       | IN   | +91    | 93, 94, 73, 75, 81, ... |
+| Malaysia    | MY   | +60    | 10, 11, 12, 13, 19, ... |
+| Brazil      | BR   | +55    | 11, 12, 13, 19, 99, ... |
+| Germany     | DE   | +49    | 150, 151, 152, 179, ... |
+| France      | FR   | +33    | 1, 2, 3, 4, 5, 6, 7 ... |
+| Japan       | JP   | +81    | 70, 80, 90, ...         |
+| Singapore   | SG   | +65    | No code by default      |
+| Philippines | PH   | +63    | 917, 918, 920, 930, ... |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+</br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️【 Installation 】
 
-### `npm run eject`
+To set up the project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/SirGhazian/phone-number-generator.git
+   cd phone-number-generator
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+   ```bash
+   npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-### Code Splitting
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🖥️【 Usage 】
 
-### Analyzing the Bundle Size
+1. Open the application in your browser.
+2. Select a country code from the dropdown menu.
+3. Set the total number of phone numbers to generate (up to 9999).
+4. Toggle the options to include the plus symbol, country prefix, or comma separation.
+5. Click the "Generate" button to create the phone numbers.
+6. Copy the generated numbers using the "Copy" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+</br>
 
-### Making a Progressive Web App
+## 📂【 Project Structure 】
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    .
+    ├── src/
+    │   ├── components/
+    │   │   └── creditsFooter.tsx
+    │   │   └── headerLogo.tsx
+    │   │   └── mainGenerator.tsx       # Main generator and all of the functions
+    │   │   └── themeController.tsx
+    │   ├── data/
+    │   │   └── countryCode.ts          # Data file containing country codes and prefixes
+    │   ├── App.tsx                     # Main application component
 
-### Advanced Configuration
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝【 Contributing 】
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please fork this repository and submit a pull request for any feature additions, country code, bug fixes, or improvements.
