@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     requireTransform({
-      fileRegex: /.js$|.vue$|.json$|/
+      fileRegex: /.json$/
     })
   ],
 })
